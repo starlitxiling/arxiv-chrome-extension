@@ -1,0 +1,145 @@
+.arxiv-quick-pdf-search-suggestion {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.16);
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  margin: 8px auto 0;
+  max-width: 584px;
+  min-height: 36px;
+  padding: 6px 8px;
+  position: relative;
+  z-index: 1000;
+}
+
+.arxiv-quick-pdf-search-link {
+  align-items: center;
+  background: #174ea6;
+  border: 1px solid #174ea6;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font: 500 13px/1.4 Arial, sans-serif;
+  min-height: 26px;
+  padding: 2px 9px;
+  text-decoration: none;
+}
+
+.arxiv-quick-pdf-search-link:hover,
+.arxiv-quick-pdf-search-link:focus {
+  background: #185abc;
+  border-color: #185abc;
+  color: #fff;
+  text-decoration: none;
+}
+
+.arxiv-quick-pdf-search-title {
+  color: #3c4043;
+  display: block;
+  flex: 1 1 auto;
+  font: 13px/1.35 Arial, sans-serif;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arxiv-quick-pdf-top {
+  align-items: center;
+  border-bottom: 1px solid #e4e7ec;
+  border-top: 1px solid #e4e7ec;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 14px;
+  max-width: 652px;
+  min-height: 38px;
+  padding: 7px 0;
+}
+
+.arxiv-quick-pdf-top-link {
+  align-items: center;
+  background: #174ea6;
+  border: 1px solid #174ea6;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font: 500 13px/1.4 Arial, sans-serif;
+  min-height: 28px;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+.arxiv-quick-pdf-top-link:hover,
+.arxiv-quick-pdf-top-link:focus {
+  background: #185abc;
+  border-color: #185abc;
+  color: #fff;
+  text-decoration: none;
+}
+
+.arxiv-quick-pdf-top-title {
+  color: #4d5156;
+  display: block;
+  flex: 1 1 auto;
+  font: 13px/1.4 Arial, sans-serif;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arxiv-quick-pdf-actions {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin: 6px 0 2px;
+}
+
+.arxiv-quick-pdf-link {
+  align-items: center;
+  background: #f8fafd;
+  border: 1px solid #d5d9e2;
+  border-radius: 4px;
+  color: #185abc;
+  display: inline-flex;
+  font: 500 12px/1.4 Arial, sans-serif;
+  min-height: 24px;
+  padding: 2px 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .arxiv-quick-pdf-search-suggestion {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .arxiv-quick-pdf-search-title {
+    white-space: normal;
+  }
+
+  .arxiv-quick-pdf-top {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 12px;
+  }
+
+  .arxiv-quick-pdf-top-title {
+    white-space: normal;
+  }
+}
+
+.arxiv-quick-pdf-link:hover,
+.arxiv-quick-pdf-link:focus {
+  background: #eef3fb;
+  border-color: #b8c6e0;
+  color: #174ea6;
+  text-decoration: none;
+}

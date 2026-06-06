@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "arXiv Quick PDF",
+  "version": "0.1.0",
+  "description": "Open arXiv PDFs directly from paper titles or Google results.",
+  "permissions": ["history", "storage", "tabs"],
+  "host_permissions": ["https://arxiv.org/*", "https://export.arxiv.org/*"],
+  "omnibox": {
+    "keyword": "ax"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com.hk/*"
+      ],
+      "js": ["src/google-results.js"],
+      "css": ["src/google-results.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "arXiv Quick PDF"
+  }
+}
